@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="style.css" ; />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Peter Brunzel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#Erfahrung">Erfahrung</a></li>
+                <li><a href="#Projekte">Projekte</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Peter Brunzel</div>
+        <div id="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#Erfahrung" onclick="toggleMenu()">Erfahrung</a></li>
+                <li><a href="#Projekte" onclick="toggleMenu()">Projekte</a></li>
+                <li><a href="#Kontakt" onclick="toggleMenu()">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="Profil">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Peter Brunzel Profilbild">
+        </div>
+        <div class="section_text">
+            <p class="section_p1">Hallo, ich bin</p>
+            <h1 class="title">Peter Brunzel</h1>
+            <p class="section_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download
+                    Lebenslauf</button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#Kontakt' ">Kontaktdaten</button>
+            </div>
+            <div id="social-container">
+                <img src="assets/linkedin.png" alt="Mein LinkedIn Profilbild" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/peter-brunzel-1b75883a1/'" />
+            </div>
+            <div id="social-container">
+                <img src="assets/github.png" alt="Mein Github Account" class="icon"
+                    onclick="location.href='https://github.com/PeterBz'" />
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
