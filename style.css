@@ -320,19 +320,18 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
-#experience{
+#experience {
   position: relative;
 }
 
-.experience-sub-title{
+.experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container{
+.experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -343,14 +342,14 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem; 
+  gap: 2.5rem;
   justify-content: space-around;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
