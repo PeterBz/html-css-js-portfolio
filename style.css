@@ -164,7 +164,7 @@ section {
 #profil {
   display: flex;
   justify-content: center;
-  position: relative; /* WICHTIG: Damit der Pfeil positioniert werden kann */
+  position: relative; 
   gap: 5rem;
   height: 80vh;
 }
@@ -355,4 +355,31 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* PROJECTS */
+
+#projects{
+  position: relative;
+}
+
+.color-container{
+  border-color: rgb(163, 163, 163);
+  background: rgb(255, 255, 255);
+}
+
+.project-img{
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title{
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn{
+  color: black;
+  background: rgb(255, 255, 255);
 }
