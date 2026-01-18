@@ -1,8 +1,10 @@
 @media screen and (max-width: 1400px) {
+  /* KORRIGIERT: #profil (wie im HTML) statt #profile */
   #profil {
     height: 83vh;
     margin-bottom: 6rem;
   }
+  /* KORRIGIERT: Mehrzahl .about-containers */
   .about-containers {
     flex-wrap: wrap;
   }
@@ -19,6 +21,7 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+  /* KORRIGIERT: Punkt vor .section-container fehlte & #profil angepasst */
   #profil,
   .section-container {
     display: block;
@@ -26,6 +29,7 @@
   .arrow {
     display: none;
   }
+  /* KORRIGIERT: fit-content (fit-container gibt es nicht) */
   section,
   .section-container {
     height: fit-content;
@@ -38,6 +42,7 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  /* KORRIGIERT: Mehrzahl */
   .about-containers {
     margin-top: 0;
   }
@@ -46,7 +51,8 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content; /* Besser als feste 40vh, damit nix abgeschnitten wird */
+    padding-bottom: 2rem;
   }
   #profil {
     height: 83vh;
@@ -59,6 +65,7 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+  /* KORRIGIERT: Mehrzahl bei containers */
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -67,6 +74,7 @@
   .contact-info-container {
     margin: 0;
   }
+  /* KORRIGIERT: Punkt vor .nav-links fehlte */
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
@@ -87,6 +95,7 @@
     height: 46vw;
     justify-content: center;
   }
+  /* KORRIGIERT: .section_p2 (HTML Name) statt .section_text_p2 */
   .section_p2 {
     font-size: 1.25rem;
   }
@@ -95,5 +104,11 @@
   }
   .text-container {
     text-align: justify;
+  }
+  
+  /* NEU: Formular responsive machen */
+  .contact-form-container {
+      width: 90%;
+      padding: 1rem;
   }
 }
