@@ -164,7 +164,7 @@ section {
 #profil {
   display: flex;
   justify-content: center;
-  position: relative; 
+  position: relative;
   gap: 5rem;
   height: 80vh;
 }
@@ -269,7 +269,7 @@ section {
 }
 
 .about-containers {
-  display: flex; 
+  display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -278,7 +278,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  display: flex; 
+  display: flex;
 }
 
 .section-container {
@@ -297,23 +297,22 @@ section {
   bottom: 2.5rem;
 }
 
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: 0.1rem solid rgb(53, 53, 53); 
+  border: 0.1rem solid rgb(53, 53, 53);
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
-.section-container{
-  gap:4rem;
+.section-container {
+  gap: 4rem;
   height: 80%;
 }
 
-.section_pic-container{
+.section_pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -357,55 +356,98 @@ article .icon {
   cursor: default;
 }
 
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+
+  th {
+    padding: 1rem 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+  td {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.3);
+    transition: background-color 0.3s ease;
+  }
+
+  td:first-child {
+    font-weight: 500;
+    white-space: nowrap;
+    width: 30%;
+  }
+
+  /* Hover-Effekt für die ganze Zeile */
+  tr:hover td {
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor: default;
+  }
+
+  /* Responsivität: Schrift kleiner auf Handy */
+  @include t.mq(600px) {
+    font-size: 0.85rem;
+
+    th,
+    td {
+      padding: 0.75rem 0.25rem;
+    }
+  }
+}
+
 /* PROJECTS */
 
-#projects{
+#projects {
   position: relative;
 }
 
-.color-container{
+.color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(255, 255, 255);
 }
 
-.project-img{
+.project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
 }
 
-.project-title{
+.project-title {
   margin: 1rem;
   color: black;
 }
 
-.project-btn{
+.project-btn {
   color: black;
   background: rgb(255, 255, 255);
 }
 
 /* CONTACT */
 
-#contact{
-  display:flex;
-  justify-content:center;
+#contact {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   height: 70vh;
 }
 
-.contact-info-upper-container{
-  display:flex;
+.contact-info-upper-container {
+  display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: 0.1rem solid rgb(53, 53, 53); 
+  border: 0.1rem solid rgb(53, 53, 53);
   border-color: rgb(163, 163, 163);
-  background: (250,250,250);
+  background: (250, 250, 250);
   margin: 2rem;
-  padding:0.5rem;
-
+  padding: 0.5rem;
 }
 
-.contact-info-container{
+.contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,26 +455,26 @@ article .icon {
   margin: 1rem;
 }
 
-.contact-info-container p{
+.contact-info-container p {
   font-size: larger;
 }
 
-.contact-icon{
+.contact-icon {
   cursor: default;
 }
 
-.email-icon{
+.email-icon {
   height: 2.5rem;
 }
 
 /* FOOTER */
 
-footer{
+footer {
   height: 26vh;
   margin: 0 1rem;
 }
 
-footer p{
+footer p {
   text-align: center;
 }
 
@@ -442,7 +484,7 @@ footer p{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: auto; 
+  height: auto;
   min-height: 80vh;
   margin-bottom: 4rem;
 }
@@ -450,12 +492,12 @@ footer p{
 .contact-form-container {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: white; 
+  background: white;
   border-radius: 2rem;
   padding: 2rem;
   margin: 2rem auto;
   width: 90%;
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 form {
@@ -468,32 +510,34 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: left; 
+  text-align: left;
 }
 
 label {
   font-weight: 600;
-  color: rgb(85, 85, 85); 
+  color: rgb(85, 85, 85);
   font-size: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 1rem;
-  border-radius: 1rem; 
-  border: 0.1rem solid rgb(163, 163, 163); 
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(163, 163, 163);
   font-size: 1rem;
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border-color: rgb(53, 53, 53);
   background-color: rgb(250, 250, 250);
 }
 
 textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 
 .form-btn-container {
@@ -501,6 +545,50 @@ textarea {
 }
 
 .form-btn-container .btn {
-  width: 100%; 
+  width: 100%;
   cursor: pointer;
+}
+
+/* --- WAVE ANIMATION --- */
+
+.title span {
+  display: inline-block;
+  animation: wave 1.5s ease-in-out;
+
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+    color: rgb(53, 53, 53);
+  }
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --- ANIMATION 2: PAGE FADE IN (Reines CSS) --- */
+
+/* 1. Die Definition der Animation */
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+    /* Optional: Ein ganz leichtes Herabgleiten wirkt noch edler */
+    transform: translateY(-20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeInPage 0.8s ease-out forwards;
+  
+  opacity: 0; 
 }
