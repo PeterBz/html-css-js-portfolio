@@ -155,6 +155,11 @@ nav {
 /* HAMBURGER MENU */
 #hamburger-nav {
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1000;  
 }
 
 #hamburger-menu {
@@ -187,6 +192,9 @@ nav {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  z-index: 1000;           
+  box-shadow: var(--shadow); 
+  border-radius: 0.5rem;
 }
 
 .menu-links a {
